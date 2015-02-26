@@ -1,0 +1,25 @@
+/* Web fonts
+------------------------------------------------------------------------------- */
+@font-face {
+    font-family: 'Sosa';
+    src: url('sosa-regular-webfont.eot?') format('eot'), url('sosa-regular-webfont.woff') format('woff'), url('sosa-regular-webfont.ttf') format('truetype');
+}
+[data-icon] {
+    display: inline;
+    font-weight: normal;
+}
+[data-icon]:before {
+    display: inline;
+    content: attr(data-icon);
+    font-family: Sosa;
+}
+.icon2x [data-icon],
+.icon2x .icon-font {
+    font-size: 2em;
+}
+.icon-font {
+    font-family: Sosa;
+    text-transform: none;
+    font-weight: normal;
+    position: relative;
+}
